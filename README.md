@@ -113,8 +113,7 @@ SQLite Database
 
 The application is deployed using:
 
-- Render
-- Gunicorn
+- Render - https://commercecore-restful-e-commerce-api.onrender.com
 
 ---
 
