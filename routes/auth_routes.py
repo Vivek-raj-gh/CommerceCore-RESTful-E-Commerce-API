@@ -7,7 +7,33 @@ auth_bp = Blueprint('auth', __name__)
 
 @auth_bp.route('/register', methods=['POST'])
 def register():
+    """
+    Register New User
+    ---
+    tags:
+      - 🔐 Authentication
 
+    parameters:
+      - in: body
+        name: body
+        required: true
+
+        schema:
+          type: object
+
+          properties:
+            username:
+              type: string
+              example: vivek
+
+            password:
+              type: string
+              example: vivek123
+
+    responses:
+      200:
+        description: User registered successfully
+    """
     data = request.get_json()
 
     hashed_password = bcrypt.generate_password_hash(
@@ -28,7 +54,33 @@ def register():
 
 @auth_bp.route('/login', methods=['POST'])
 def login():
+    """
+    User Login
+    ---
+    tags:
+      - 🔐 Authentication
 
+    parameters:
+      - in: body
+        name: body
+        required: true
+
+        schema:
+          type: object
+
+          properties:
+            username:
+              type: string
+              example: vivek
+
+            password:
+              type: string
+              example: vivek123
+
+    responses:
+      200:
+        description: JWT token generated
+    """
     data = request.get_json()
 
     user = User.query.filter_by(
