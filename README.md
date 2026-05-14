@@ -114,6 +114,7 @@ SQLite Database
 The application is deployed using:
 
 - Render - https://commercecore-restful-e-commerce-api.onrender.com
+- UI - https://commercecore-restful-e-commerce-api.onrender.com/apidocs
 
 ---
 
