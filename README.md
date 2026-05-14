@@ -141,4 +141,4 @@ The primary objective of CommerceCore is to simulate a real-world e-commerce bac
 
 # 👨‍💻 Author
 
-Developed by Vivek Raj using Python and Flask.
+Developed by Vivek Vardhan Saraswathi using Python and Flask.
